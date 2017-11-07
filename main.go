@@ -1,8 +1,7 @@
 package main
 
 import (
-	_ "CodeChallenge/DriversMetricsAPI/routers"
-
+	_ "drivers-metrics-api/routers"
 	"github.com/astaxie/beego"
 )
 

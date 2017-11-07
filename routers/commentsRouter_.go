@@ -7,7 +7,7 @@ import (
 
 func init() {
 
-	beego.GlobalControllerRouter["CodeChallenge/DriversMetricsAPI/controllers:DriverController"] = append(beego.GlobalControllerRouter["CodeChallenge/DriversMetricsAPI/controllers:DriverController"],
+	beego.GlobalControllerRouter["drivers-metrics-api/controllers:DriverController"] = append(beego.GlobalControllerRouter["drivers-metrics-api/controllers:DriverController"],
 		beego.ControllerComments{
 			Method: "Post",
 			Router: `/`,
@@ -15,7 +15,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["CodeChallenge/DriversMetricsAPI/controllers:DriverController"] = append(beego.GlobalControllerRouter["CodeChallenge/DriversMetricsAPI/controllers:DriverController"],
+	beego.GlobalControllerRouter["drivers-metrics-api/controllers:DriverController"] = append(beego.GlobalControllerRouter["drivers-metrics-api/controllers:DriverController"],
 		beego.ControllerComments{
 			Method: "GetAllDrivers",
 			Router: `/`,
@@ -23,7 +23,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["CodeChallenge/DriversMetricsAPI/controllers:DriverController"] = append(beego.GlobalControllerRouter["CodeChallenge/DriversMetricsAPI/controllers:DriverController"],
+	beego.GlobalControllerRouter["drivers-metrics-api/controllers:DriverController"] = append(beego.GlobalControllerRouter["drivers-metrics-api/controllers:DriverController"],
 		beego.ControllerComments{
 			Method: "Get",
 			Router: `/:id`,
@@ -31,7 +31,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["CodeChallenge/DriversMetricsAPI/controllers:DriverController"] = append(beego.GlobalControllerRouter["CodeChallenge/DriversMetricsAPI/controllers:DriverController"],
+	beego.GlobalControllerRouter["drivers-metrics-api/controllers:DriverController"] = append(beego.GlobalControllerRouter["drivers-metrics-api/controllers:DriverController"],
 		beego.ControllerComments{
 			Method: "Put",
 			Router: `/:id`,
@@ -39,7 +39,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["CodeChallenge/DriversMetricsAPI/controllers:DriverController"] = append(beego.GlobalControllerRouter["CodeChallenge/DriversMetricsAPI/controllers:DriverController"],
+	beego.GlobalControllerRouter["drivers-metrics-api/controllers:DriverController"] = append(beego.GlobalControllerRouter["drivers-metrics-api/controllers:DriverController"],
 		beego.ControllerComments{
 			Method: "Delete",
 			Router: `/:id`,
@@ -47,7 +47,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["CodeChallenge/DriversMetricsAPI/controllers:MetricController"] = append(beego.GlobalControllerRouter["CodeChallenge/DriversMetricsAPI/controllers:MetricController"],
+	beego.GlobalControllerRouter["drivers-metrics-api/controllers:MetricController"] = append(beego.GlobalControllerRouter["drivers-metrics-api/controllers:MetricController"],
 		beego.ControllerComments{
 			Method: "Post",
 			Router: `/`,
@@ -55,7 +55,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["CodeChallenge/DriversMetricsAPI/controllers:MetricController"] = append(beego.GlobalControllerRouter["CodeChallenge/DriversMetricsAPI/controllers:MetricController"],
+	beego.GlobalControllerRouter["drivers-metrics-api/controllers:MetricController"] = append(beego.GlobalControllerRouter["drivers-metrics-api/controllers:MetricController"],
 		beego.ControllerComments{
 			Method: "Get",
 			Router: `/:name`,

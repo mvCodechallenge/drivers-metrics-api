@@ -3,7 +3,7 @@ package controllers
 import (
 	"github.com/astaxie/beego"
 	"encoding/json"
-	"CodeChallenge/DriversMetricsAPI/models"
+	"drivers-metrics-api/models"
 	"strings"
 )
 

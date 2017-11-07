@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"CodeChallenge/DriversMetricsAPI/models"
+	"drivers-metrics-api/models"
 	"encoding/json"
 	"github.com/astaxie/beego"
 )

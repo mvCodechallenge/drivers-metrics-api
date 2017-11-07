@@ -3,7 +3,7 @@ package models
 import (
 	"fmt"
 	"errors"
-	"CodeChallenge/DriversMetricsAPI/data-access"
+	"drivers-metrics-api/data-access"
 )
 
 /*
