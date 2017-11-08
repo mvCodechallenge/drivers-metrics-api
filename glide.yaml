@@ -1,0 +1,13 @@
+package: drivers-metrics-api
+import:
+- package: github.com/astaxie/beego
+  subpackages:
+  - context/param
+- package: github.com/lib/pq
+testImport:
+- package: github.com/smartystreets/assertions
+  subpackages:
+  - should
+- package: github.com/smartystreets/goconvey
+  subpackages:
+  - convey
