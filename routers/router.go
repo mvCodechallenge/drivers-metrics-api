@@ -8,7 +8,7 @@
 package routers
 
 import (
-	"CodeChallenge/DriversMetricsAPI/controllers"
+	"drivers-metrics-api/controllers"
 	"github.com/astaxie/beego"
 )
 
@@ -29,7 +29,7 @@ func init() {
 				&controllers.MetricController{},
 			),
 		),
-		beego.NSNamespace("/metric/:name/",
+		beego.NSNamespace("/metric/:name",
 			beego.NSInclude(
 				&controllers.MetricController{},
 			),
