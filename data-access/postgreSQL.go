@@ -3,6 +3,7 @@ package data_access
 import (
 	"database/sql"
 	_ "github.com/lib/pq"
+	"os"
 )
 
 /*
@@ -14,7 +15,13 @@ var _db *sql.DB;
 	Opens connection to DB and initialize it's instance
 */
 func init() {
-	db, err := sql.Open("postgres", "postgres://postgres:password@localhost/CodeChallenge?sslmode=disable")
+	// Take from heroku app engine, if missing take local DB
+	connectionString := os.Getenv("DATABASE_URL");
+	if (connectionString == "") {
+		connectionString = "postgres://postgres:password@localhost/CodeChallenge?sslmode=disable"
+	}
+
+	db, err := sql.Open("postgres", connectionString)
 	if (err != nil) {
 		panic(err)
 	}
